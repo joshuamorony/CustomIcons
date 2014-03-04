@@ -1,0 +1,18 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+@include icon-font('extended-icons', inline-font-files(
+  'extended-icons/extended-icons.woff', woff,
+  'extended-icons/extended-icons.ttf', truetype,
+  'extended-icons/extended-icons.svg', svg
+));
+
+// Examples of using the icon mixin:
+@include icon('facebook', '\e600', 'extended-icons');
+@include icon('facebook2', '\e601', 'extended-icons');
+@include icon('music', '\e609', 'extended-icons');
+@include icon('headphones', '\e60a', 'extended-icons');
